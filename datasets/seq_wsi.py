@@ -25,10 +25,10 @@ import numpy as np
 from datasets.utils.validation import get_train_val
 from datasets.utils.continual_dataset import ContinualDataset, store_masked_loaders
 from typing import Tuple
-from backbone.model_clam import CLAM_SB
+# from backbone.model_clam import CLAM_SB
 from backbone.hit import HIT
-from backbone.transmil import TransMIL
-from backbone.model_dsmil import FCLayer, BClassifier, MILNet
+# from backbone.transmil import TransMIL
+# from backbone.model_dsmil import FCLayer, BClassifier, MILNet
 
 def collate_MIL(batch):
     img = torch.cat([item[0] for item in batch], dim = 0)
